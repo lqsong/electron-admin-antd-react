@@ -120,10 +120,12 @@ export default defineConfig({
           ]
       },
       mac: { // mac
-          icon: "./build/icons/icon.icns"
+          icon: "./build/icons/icon.icns",
+          artifactName: '${productName}-v${version}-mac.${ext}'
       },
       win: { // win 相关配置
           icon: './build/icons/icon.ico',
+          artifactName: '${productName}-v${version}-win32-setup.${ext}',
           target: [
               {
                 target: "nsis", // 利用nsis制作安装程序
@@ -135,7 +137,8 @@ export default defineConfig({
             ]
       },
       linux: {
-          icon: "./build/icons"
+          icon: "./build/icons",
+          artifactName: '${productName}-v${version}-linux.${ext}'
       },
       publish: [
         {
