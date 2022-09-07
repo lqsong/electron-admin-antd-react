@@ -60,7 +60,7 @@
     "@umijs/fabric": "^2.6.4",
     "cross-env": "^7.0.3",
     "electron": "^9.4.4",
-    "electron-builder": "^22.11.7",
+    "electron-builder": "23.0.3",
     "electron-webpack": "^2.8.2",
     "electron-webpack-ts": "^4.0.1",
     "express": "^4.17.1",
@@ -69,7 +69,7 @@
     "svg-sprite-loader": "^5.2.1",
     "svgo": "^1.3.2",
     "svgo-loader": "^2.2.2",
-    "umi-plugin-electron-builder": "^1.0.18"
+    "umi-plugin-electron-builder": "2.1.14"
   },
   "keywords": [
     "electron",
