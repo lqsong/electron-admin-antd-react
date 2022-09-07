@@ -17,7 +17,8 @@
     "electron:build:win": "umi build electron --win",
     "electron:build:mac": "umi build electron --mac",
     "electron:build:linux": "umi build electron --linux",
-    "rebuild-deps": "electron-builder install-app-deps"
+    "rebuild-deps": "electron-builder install-app-deps",
+    "electron:init": "umi electron init"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
