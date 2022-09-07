@@ -1,6 +1,8 @@
 import { app, BrowserWindow, protocol, Menu } from 'electron';
 import createProtocol from 'umi-plugin-electron-builder/lib/createProtocol';
-import installExtension, { REACT_DEVELOPER_TOOLS } from 'electron-devtools-installer';
+import installExtension, {
+  REACT_DEVELOPER_TOOLS,
+} from 'electron-devtools-installer';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 let mainWindow: BrowserWindow;
@@ -34,7 +36,7 @@ app.on('ready', async () => {
     try {
       await installExtension(REACT_DEVELOPER_TOOLS);
     } catch (e) {
-      console.error('React Devtools failed to install:', e.toString())
+      console.error('React Devtools failed to install:', e.toString());
     }
   }
   createWindow();
